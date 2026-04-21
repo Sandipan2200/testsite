@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Django Site</title>
+    <style>
+        :root {
+            --bg: #f4efe6;
+            --card: #fffaf3;
+            --text: #1f2937;
+            --accent: #c26d38;
+            --accent-dark: #8f4c25;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #f8f3ea, #efe3d0);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 48px 20px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 18px;
+            padding: 32px;
+            box-shadow: 0 16px 40px rgba(72, 47, 24, 0.12);
+        }
+
+        nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+        }
+
+        nav a,
+        .button {
+            text-decoration: none;
+            color: white;
+            background: var(--accent);
+            padding: 10px 16px;
+            border-radius: 999px;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        .button:hover {
+            background: var(--accent-dark);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 12px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 28px;
+        }
+
+        .panel {
+            background: white;
+            border-radius: 14px;
+            padding: 20px;
+            border: 1px solid #ead8c4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+
+            <h1>Dummy Django Site</h1>
+            <p>
+                This is a simple test homepage connected inside your Django project.
+                You can use it as a starting point for learning templates, views, and URL routing.
+            </p>
+
+            <div class="grid">
+                <div class="panel">
+                    <h2>Fast Setup</h2>
+                    <p>A basic landing page is now connected to the root URL.</p>
+                </div>
+                <div class="panel">
+                    <h2>Extra Pages</h2>
+                    <p>Navigation links connect this page to About and Contact pages.</p>
+                </div>
+                <div class="panel">
+                    <h2>Ready to Edit</h2>
+                    <p>Change the text, colors, or layout whenever you want.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
